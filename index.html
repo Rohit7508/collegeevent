@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Fest 2025</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet">
 </head>
 <body id="mode1">
+
     <header>
-        <h1 onclick="change()" class="dark-mode"><i class='bx  bx-color-fill'></i> </h1>
+        <h1 onclick="change()" class="dark-mode"><i class='bx bx-color-fill'></i></h1>
+
         <h1>College Fest 2025</h1>
         <p>Join the biggest annual college celebration!</p>
         <a href="#register" class="btn">Register Now</a>
     </header>
 
-
     <section class="about">
         <h2>About the Event</h2>
-        <p>The College Fest 2025 brings together cultural, technical and fun activities for all students. Don't miss the chance to join exciting competitions and enjoy the festive vibe!</p>
+        <p>The College Fest 2025 brings together cultural, technical and fun activities for all students.</p>
     </section>
 
     <section id="mode2" class="events">
         <h2>Main Events</h2>
+
         <div class="event-box">
-       <h3>🎤 Singing Competition</h3>
-            <p>Show your talent on stage!</p> 
+            <h3>🎤 Singing Competition</h3>
+            <p>Show your talent on stage!</p>
         </div>
+
         <div class="event-box">
             <h3>💃 Dance Battle</h3>
             <p>Solo & group performances.</p>
         </div>
+
         <div class="event-box">
             <h3>🎮 Gaming Tournament</h3>
             <p>BGMI · Valorant · Free Fire</p>
         </div>
+
         <div class="event-box">
             <h3>🧠 Quiz Challenge</h3>
             <p>Tech · General · Entertainment</p>
@@ -43,48 +48,49 @@
 
     <section id="register" class="register">
         <h2>Register for the Event</h2>
+
         <form id="regform">
             <input id="name" type="text" placeholder="Your Name" required>
             <input id="course" type="text" placeholder="College / Course" required>
             <input id="email" type="email" placeholder="Email" required>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
     <footer>
         <p>© 2025 College Fest • All Rights Reserved</p>
     </footer>
-   
 
     <script>
-        alert("welcome to College Fest Website")
+        alert("welcome to College Fest Website");
 
-        document.getElementById("regform").addEventListener("submit" , function(e){
+        document.getElementById("regform").addEventListener("submit", function(e) {
             e.preventDefault();
 
             const name = document.getElementById("name").value;
             const course = document.getElementById("course").value;
             const email = document.getElementById("email").value;
 
-             const userData = { name, course , email};
+            const userData = { name, course, email };
+            localStorage.setItem("currentUser", JSON.stringify(userData));
 
-             localStorage.setItem("currentUser", JSON.stringify(userData));
-
-             window.location.href = "submit.html";
+            window.location.href = "events.html";
         });
-     function change(){
-        document.getElementById("mode1").style.backgroundColor = "black";
-        document.getElementById("mode1").style.color = "white";
-        document.getElementById("mode2").style.backgroundColor = "#110620";
-        document.getElementById("name").style.backgroundColor = "#929194";
-        document.getElementById("course").style.backgroundColor = "#929194";
-        document.getElementById("email").style.backgroundColor = "#929194";
-        document.getElementById("name").style.color = "white";
-        document.getElementById("course").style.color = "white";
-        document.getElementById("email").style.color = "white";
-     }
+
+        function change() {
+            document.getElementById("mode1").style.backgroundColor = "black";
+            document.getElementById("mode1").style.color = "white";
+            document.getElementById("mode2").style.backgroundColor = "#110620";
+
+            document.getElementById("name").style.backgroundColor = "#929194";
+            document.getElementById("course").style.backgroundColor = "#929194";
+            document.getElementById("email").style.backgroundColor = "#929194";
+
+            document.getElementById("name").style.color = "white";
+            document.getElementById("course").style.color = "white";
+            document.getElementById("email").style.color = "white";
+        }
     </script>
+
 </body>
 </html>
-
-
