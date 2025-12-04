@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Fest 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 { 
+    font-size: 3rem; 
+    margin: 0; 
+}
+header p {
+    font-size: 1.3rem;
+     margin-top: 10px; 
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 15px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+nav a:hover {
+     color: #1abc9c;
+     }
+
+section {
+    
+     padding: 60px 20px;
+    max-width: 1200px; 
+    margin: auto;
+
+}
+h2 { 
+    text-align: center;
+     margin-bottom: 50px; 
+     color: #2c3e50;
+     }
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.event-card {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.event-card .content {
+    padding: 20px;
+}
+
+.event-card h3 { 
+    margin: 0 0 10px 0; 
+    color: #2c3e50; 
+    font-size: 1.6rem;
+ }
+.event-card p { 
+    margin: 0 0 10px 0;
+     font-size: 1rem;
+      color: #555;
+     }
+.event-card span {
+     display: block; 
+     font-size: 0.9rem; 
+     color: #888; 
+     margin-bottom: 5px;
+     }
+
+.section-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.highlight-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+.highlight-card p {
+     margin: 0; font-size: 0.95rem;
+    
+    }
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #34495e;
+    color: #fff;
+}
+
+@media(max-width: 768px)
+{
+    .event-card,
+    .highlight-card {
+         width: 90%;
+         }
+    nav { 
+        flex-direction: column; gap: 10px;
+     }
+}
+.welcome{
+    color: #491aa0;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>College Fest 2025</h1>
+    <p>Celebrate Talent, Music, Dance, Art & Sports</p>
+</header>
+
+<nav>
+    <a href="#events">Events</a>
+    <a href="#highlights-section">Highlights</a>
+    <a href="#about">About Us</a>
+    <a href="#venue">Venue</a>
+    <a href="#contact">Contact</a>
+</nav>
+<h1 class="welcome" id="welcome" ></h1>
+
+<section id="events">
+    <h2>Events</h2>
+    <div class="events">
+        <div class="event-card">
+            <img src="music.jpg" alt="Singing">
+            <div class="content">
+                <h3>🎤 Singing Competition</h3>
+                <p>Showcase your vocal skills and compete for the title of best singer of the fest. Solo or group performances allowed.</p>
+                <span>📅 Date: Dec 10</span>
+                <span>🕒 Time: 3:00 PM</span>
+                <span>📍 Venue: Main Stage</span>
+                <span>🎵 Category: Music</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="danse.jpg" alt="Dance">
+            <div class="content">
+                <h3>💃 Dance Battle</h3>
+                <p>Perform solo or in a team and impress the judges with your moves. Creativity and style matter!</p>
+                <span>📅 Date: Dec 11</span>
+                <span>🕒 Time: 4:00 PM</span>
+                <span>📍 Venue: Auditorium</span>
+                <span>🎵 Category: Dance</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg" alt="Gaming">
+            <div class="content">
+                <h3>🎮 Gaming Tournament</h3>
+                <p>Join the gaming arena and compete in popular games. Exciting prizes await winners!</p>
+                <span>📅 Date: Dec 12</span>
+                <span>🕒 Time: 2:00 PM</span>
+                <span>📍 Venue: Gaming Zone</span>
+                <span>🎵 Category: Games</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="quiz.jpg" alt="Quiz">
+            <div class="content">
+                <h3>🧠 Quiz Challenge</h3>
+                <p>Test your knowledge across various subjects. Quick thinking and teamwork are key to winning!</p>
+                <span>📅 Date: Dec 10</span>
+                <span>🕒 Time: 1:00 PM</span>
+                <span>📍 Venue: Library Hall</span>
+                <span>🎵 Category: Quiz/Knowledge</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="highlights-section">
+    <h2>Special Highlights</h2>
+    <div class="highlights">
+        <div class="highlight-card">
+            <h4>Guest Performance</h4>
+            <p>Special musical performance by a celebrity guest on Dec 20 evening at Main Stage.</p>
+        </div>
+        <div class="highlight-card">
+            <h4>Workshop: Art & Design</h4>
+            <p>Interactive workshop for students to learn creative design techniques on Dec 20</p>
+        </div>
+        <div class="highlight-card">
+            <h4>Sports Finals</h4>
+            <p>Final matches of all sports competitions on Dec 20 at Sports Complex. Cheer for your teams!</p>
+        </div>
+        <div class="highlight-card">
+            <h4>Food & Fun Zone</h4>
+            <p>Enjoy delicious food, games, and fun activities all day at the campus fest area.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p class="section-text">College Fest 2025 is an annual celebration of talent and creativity. It brings students together to participate in competitions, performances, and workshops, creating a lively and engaging campus experience.</p>
+</section>
+
+<section id="venue">
+    <h2>Venue</h2>
+    <p class="section-text">Events take place at Central Campus Grounds, Main Auditorium, and Sports Complex.<br>123 College Street, City, State.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="section-text">For more information, contact the organizing committee at <strong>collegefestofficial@example.com</strong> or call <strong>+91 6284533146</strong>.</p>
+</section>
+
+<footer>
+    &copy; 2025 College Fest. All rights reserved.
+</footer>
+<script>
+     const user = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (user) {
+        document.getElementById("welcome").innerText = 
+            "Welcome " + user.name + "! Here are the events you can join:";
+    } else {
+        document.getElementById("welcome").innerText =
+            "Welcome! Here are the events.";
+    }
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-image:url('bg1.jpg');
+    color: rgb(25, 21, 21);
+    width: 1700px;
+    height: 300px;
+    background-size: cover;
+
+}
+
+header .btn {
+    background: transparent;
+    color: #6b5ad9;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.9s;
+}
+header .btn:hover{
+
+     background-color: rgba(0, 0, 0, 0.65);
+     color: #ffffff;
+     font-size: 19px;
+}
+
+h1{
+    color:#6a5acd;
+    font-size: 40px;
+}
+
+.about, .events, .register {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.events {
+    background: #ffffff;
+}
+
+.event-box {
+    background: #6a5acd;
+    color: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.9s;
+    
+}
+.event-box:hover{
+    width: 90%;
+    background-color: #403f3f;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.register input,
+ .register button {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.register button {
+    background: #6a5acd;
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+    margin-left: 600px;
+    width: 150px;
+}
+.register button:hover{
+    background-color: #222;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #222;
+    color: white;
+}
+.dark-mode{
+    color: #222;
+    margin-left:1200px ;
+    margin-top: -40px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.dark-mode:hover{
+    color: #7c3bfc;
+}
